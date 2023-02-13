@@ -11,30 +11,50 @@
 # # --------------------------------------
 
 # # --------------A_divid_B------------------
-# a = int(input('Enter first numeric'))
-# b = int(input('Enter second numeric'))
+# a = int(input('Enter first numeric: '))
+# b = int(input('Enter second numeric: '))
 
 # if a % b == 0:
-#     print('Divides evenly. Result of division is: ', int(a / b))
+#     print('Divides evenly. Result of division is:', int(a / b))
 # else:
-#     print('Divides with a remainder. Remainder is: ', a % b)
+#     print('Divides with a remainder. Remainder is:', a % b)
 # ------------------------------------------------
 
-# ---------------Pay_Roll-----------------------
+# # ---------------Pay_Roll-----------------------
 # salary = float(input('Enter your current salary: '))
-# work_experience = int(input('Enter your work experience (years): '))
+# work_experience = float(input('Enter your work experience (years): '))
+# new_salary = 0
 
-# if work_experience <= 3 and work_experience >= 0:
-#     salary *= 1.1
-# elif work_experience > 3:
-#     salary *= 1.2
-
-# if salary < 4000:
-#     salary += 1000
+# if salary <= 0 or work_experience < 0:
+#     new_salary = False
+# elif work_experience < 1:
+#     new_salary = salary 
+# elif work_experience <= 3:
+#     new_salary = salary * 1.1
 # else:
-#     salary += 500
-# print('New salary: ', salary)
-# -----------------------------------------------------
+#     new_salary = salary * 1.2
+
+# if new_salary == False:
+#     print('Invalid data!!!')
+# elif new_salary < 4000:
+#     new_salary += 1000
+#     print('New salary: ', new_salary)
+# else:
+#     new_salary += 500
+#     print('New salary: ', new_salary)
+
+
+
+
+
+
+
+
+# !!!!!!Homework with Python #2!!!!!!
+# for i in range(1, 10):
+#     print(f"3 * {i} = {3 * i}")
+
+
 
 
 
