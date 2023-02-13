@@ -28,33 +28,7 @@ new_salary = 0
 if salary <= 0 or work_experience < 0:
     new_salary = 0
 elif work_experience < 1:
-    new_salary = salary
-elif work_experience <= 3:
-    new_salary = salary * 1.1
-else:
-    new_salary = salary * 1.2
-
-if new_salary <= 0:
-    print('Invalid data!!!')
-elif new_salary == salary:
-    print('New salary: ', salary)
-elif new_salary < 4000:
-    new_salary += 1000
-    print('New salary: ', new_salary)
-else:
-    new_salary += 500
-    print('New salary: ', new_salary)
-# ------------------------------------------------
-
-# # ---------------Pay_Roll-----------------------
-salary = float(input('Enter your current salary: '))
-work_experience = float(input('Enter your work experience (years): '))
-new_salary = 0
-
-if salary <= 0 or work_experience < 0:
-    new_salary = 0
-elif work_experience < 1:
-    new_salary = salary
+    new_salary = salary * 1
 elif work_experience <= 3:
     new_salary = salary * 1.1
 else:
