@@ -1,39 +1,39 @@
 # !!!!!!Homework with Python #1!!!!!!
 
 # -----------AGE_VALIDE---------------
-age = int(input('Enter your age: '))
-if age < 0:
-    print('Invalid age')
-elif age < 18:
-    print('You are not yet an adult')
-else:
-    print('You are now an adult')
-# --------------------------------------
+# age = int(input('Enter your age: '))
+# if age < 0:
+#     print('Invalid age')
+# elif age < 18:
+#     print('You are not yet an adult')
+# else:
+#     print('You are now an adult')
+# # --------------------------------------
 
-# --------------A_divid_B------------------
-a = int(input('Enter first numeric'))
-b = int(input('Enter second numeric'))
+# # --------------A_divid_B------------------
+# a = int(input('Enter first numeric'))
+# b = int(input('Enter second numeric'))
 
-if a % b == 0:
-    print('Divides evenly. Result of division is: ', int(a / b))
-else:
-    print('Divides with a remainder. Remainder is: ', a % b)
+# if a % b == 0:
+#     print('Divides evenly. Result of division is: ', int(a / b))
+# else:
+#     print('Divides with a remainder. Remainder is: ', a % b)
 # ------------------------------------------------
 
 # ---------------Pay_Roll-----------------------
-salary = float(input('Enter your current salary: '))
-work_experience = int(input('Enter your work experience (years): '))
+# salary = float(input('Enter your current salary: '))
+# work_experience = int(input('Enter your work experience (years): '))
 
-if work_experience <= 3 and work_experience >= 0:
-    salary *= 1.1
-elif work_experience > 3:
-    salary *= 1.2
+# if work_experience <= 3 and work_experience >= 0:
+#     salary *= 1.1
+# elif work_experience > 3:
+#     salary *= 1.2
 
-if salary < 4000:
-    salary += 1000
-else:
-    salary += 500
-print('New salary: ', salary)
+# if salary < 4000:
+#     salary += 1000
+# else:
+#     salary += 500
+# print('New salary: ', salary)
 # -----------------------------------------------------
 
 
