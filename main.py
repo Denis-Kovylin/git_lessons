@@ -1,3 +1,48 @@
+# !!!!!!Homework with Python #2!!!!!!
+# ----------------- Multiplication table for 3 -----------------------------
+# --------------------------------------------------------------------------
+# for i in range(1, 10):
+#     print(f'3 * {i} = {3 * i}')
+# --------------------------------------------------------------------------
+# -----------------  Sums of numbers from 1 to 100 ----------------------------
+# sum = 0
+# for i in range(1, 101):
+#     sum += i
+# print('The sum of all numbers in the range 1 to 100 is:', sum)
+# ---------------------------------------------------------------------------
+# ----------- Divide by two until the result is less than fifty -----------
+# number = float(input('Enter number: '))
+# def divide_by_two(number):
+#     if number < 50:
+#         return 'You entered too low a number'
+
+#     count = 0
+#     while number >= 50:
+#         number /= 2
+#         count += 1
+
+#     return f'Number of iterations: {count}, Number: {number}'
+
+# result = divide_by_two(number)
+# print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # !!!!!!Homework with Python #1!!!!!!
 
 # -----------AGE_VALIDE---------------
@@ -21,50 +66,88 @@
 # ------------------------------------------------
 
 # # ---------------Pay_Roll-----------------------
-salary = float(input('Enter your current salary: '))
-work_experience = float(input('Enter your work experience (years): '))
-new_salary = 0
+# salary = float(input('Enter your current salary: '))
+# work_experience = float(input('Enter your work experience (years): '))
+# new_salary = 0
 
-if salary <= 0 or work_experience < 0:
-    new_salary = 0
-elif work_experience < 1:
-    new_salary = salary * 1
-elif work_experience <= 3:
-    new_salary = salary * 1.1
-else:
-    new_salary = salary * 1.2
+# if salary <= 0 or work_experience < 0:
+#     new_salary = 0
+# elif work_experience < 1:
+#     new_salary = salary * 1
+# elif work_experience <= 3:
+#     new_salary = salary * 1.1
+# else:
+#     new_salary = salary * 1.2
 
-if new_salary <= 0:
-    print('Invalid data!!!')
-elif new_salary == salary:
-    print('New salary: ', salary)
-elif new_salary < 4000:
-    new_salary += 1000
-    print('New salary: ', new_salary)
-else:
-    new_salary += 500
-    print('New salary: ', new_salary)
-
-
-
-
-
-
-# !!!!!!Homework with Python #2!!!!!!
-# -------------------------------------------
-# for i in range(1, 10):
-#     print(f"3 * {i} = {3 * i}")
-# ----------------------------------------------
-# sum = 0
-# for i in range(1, 101):
-#     sum += i
-# print('The sum of all numbers in the range 1 to 100 is:', sum)
-# -------------------------------------------------
+# if new_salary <= 0:
+#     print('Invalid data!!!')
+# elif new_salary == salary:
+#     print('New salary: ', salary)
+# elif new_salary < 4000:
+#     new_salary += 1000
+#     print('New salary: ', new_salary)
+# else:
+#     new_salary += 500
+#     print('New salary: ', new_salary)
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# !!! УРОК ТРЕТИЙ !!!
+# ----- Словари - неупорядоченые колекции объектов с доступом по ключу -----
+# some_dict = {}
+# # print(type(some_dict))
+# some_dict["some_key"] = 123
+# some_dict["some_text"] = 'Text'
+# print(some_dict)
+# # ----- Очищение словаря -----
+# some_dict.clear()
+# print(some_dict)
+# # ----- Корирование словаря ----
+# dict_1 = some_dict.copy()
+# print(dict_1, some_dict)
+# # ----- Перебор словаря (вариант 1) -----
+# print(some_dict)
+# for key in some_dict:
+#     print(f'key: {key} value {some_dict[key]}')
+#     # ----- Перебор словаря (вариант 2) -----
+# print(some_dict)
+# for key, values in some_dict.items():
+#     print(f'Key: {key} value {values}')
+# # ----- Метод values() выводит все значения из словаря -----
+# print(some_dict.keys())
+
+# some_dict.update({'some+1': '123.21', 'some_key': 123.23})
+# print(some_dict)
+# --------------------------------------------------------------
+# ----- Класс - кастомный объект данных и этот объект может иметь некоторые функции внутри класса. Функции внутри класса будут являтся методами класса-----
+
+# ---------------------------- АВТОМАТИЗАЦИЯ --------------------------------
+# ---------------------------------------------------------------------------
 
 
 
@@ -200,70 +283,121 @@ else:
 # print(some_string.lstrip()) 
 # -----------------------------------------------------------------------------------
 #--------Срезы - диапозон значений. Задается тремя цифрами в квадратных скобках-------
-# --------[первое значение диарозона]:[второе значение диарозона]:[шаг диарозона]-------
+# --------[первое значение диарозона]:[второе значение диарозона]:[шаг диапазона]-------
 # some_string = "Some text"
 # print(some_string[0:4])
 # -----------------------------------------------------------------------------------
 # some_string = "some text"
 # print(some_string[0:len(some_string):2])
-
-some_string = "some text"
-print(some_string[0:-5])
+# ------- Вывод строки -5 символов ------
+# some_string = "some text"
+# print(some_string[0:-5])
 # ---Вывод строки в обратном порядке---
 # some_string = "some text"
 # print(some_string[::-1])
-
+# ------- Поиск в строке - find (rfind, lfind)-------
 # some_string = "some text"
 # print(some_string.find('o'))
 # print(some_string[some_string.find('o')])
-
-
-# ---Списки---
-# some_list = [1, 32, 45, 'Test', [1.2, 342, 2.3]]  - вложеные списки
+# ------- Замена символа в строке - replace -------
+# some_string = "some text"
+# print(some_string.replace('o', 'new'))
+# ------- Проверка строки на верний/нижний регистр - islower/isupper -------
+# some_string = "some text"
+# print(some_string.islower())
+# print(some_string.isupper())
+# --------- Проверка строки на цифры - isdigit -------
+# some_string = "some text"
+# print(some_string.isdigit())
+# ------- Проверка строки на буквы с цифрами - isalnum --------
+# some_string = "some text"
+# print(some_string.isalnum())
+# -------- Проверка строки на буквы - isalpha -------
+# some_string = "some text"
+# print(some_string.isalpha())
+# -----------------------------------------------------------------------------------
+# ------------------------- Списки ---------------------------------------
+# -------- Вывод елементов списка -------
+# some_list = [1, 32, 45, 'Test', [1.2, 342, 2.3]] 
 # for ele in some_list:
 #     print(ele)
-
+# ------- Длинна списка --------
 # some_list = [1, 32, 45, 'Test', [1.2, 342, 2.3]]
 # print(len(some_list))
+# -----------------------------------------------------------------------------------
+# some_list = [1, 32, 45, 'Test', [1.2, 342, 2.3], 1.2, 342, 2.3]
+# print(len(some_list))
+# ------- Преоюразование строки в список - list() --------
 # some_string = "some text"
 # print(list(some_string))
-
-# some_list = [1, 32, 45, 'Test', [1.2, 342, 2.3], 1.2, 342, 2.3]
-
-# some_list_insert = [14, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 88]
-# some_list = ['work', 'play', 'sleep']
-# # print(min(some_list))
-# # print(max(some_list))
+# -------- Минимальное/максимальное значение списка - min()/max() ---------
+# some_list = [1, 2, 3, 4, 5, 6]
+# print(max(some_list), min(some_list))
+# --------- Сумма объектов списка - sum() ---------
+# some_list = [1, 2, 3, 4, 5, 6]
+# print(sum(some_list))
+# ---------- Добавление елемента в конец списка - append ---------
+# some_list = [1, 2, 3, 4, 5, 6]
+# some_list.append(23)
+# print(some_list)
+# ---------- Сортировка списка - sort() ---------
+# some_list = [12, 7, 11, 8, 9, 10, 1, 2, 3, 4, 5, 6]
+# some_list.sort()
+# print(some_list)
+# ----------- Вставка в список списка - insert() ---------
+# some_list_insert = [1, 2, 3, 4, 5, 6]
+# some_list = ['work', ['play'], ['sleep']]
 # print(some_list.insert(1, some_list_insert))
-
-
-
-
-# while c предустовием
+# print(some_list)
+# -------------------------------------------------------------
+# ---------- Цикл с предусловием - while ------------
+# some_list_insert = [21, 32, 1, 2, 3, 4, 5, 6]
 # count = 0
 # while len(some_list_insert) > count:
 #     print(some_list_insert[count])
 #     count += 1
-
-# Бесконечный цикл
-# is_number = True
+# ------------ Цикл перебора до указаного числа ----------
+# numb = True
 # count = 0
-# while is_number:
-#     print(count)
-# #     count += 1
-
-# cont = 0 
-# is_number = True
-#     if count ==120:
-#         print(cont)
+# while numb:
+#     if count == 120:
+#         print(count)
 #         break
-#     elif 10 < 110:
-#         # print(count, end=" ")
-#         cont += 1
+#     else:
+#         print(count)
+#         count += 1
+# ----------------- !!!continue!!! -----------
+# numb = True
+# count = 0
+# while numb:
+#     if count == 120:
+#         print(count)
+#         break
+#     elif 10 < count < 110:
+#         count += 1
 #         continue
 #     else:
-#         print(cont, end=" ")
-#         cont += 1
+#         print(count, end = " ")
+#         count += 1
+# -----------------------------------------------------------------
+# -------------- Функции ------------
+# Синтакси: def имя_функции(аргументы функции):
+#                 тело функции
+# --------- Функция с возвращаемым значением - return ---------
+# def add(num_1, num_2):
+#     sum = num_1 + num_2
+#     return sum
+
+# sum_1 = add(2, 8)
+# print(sum_1)
+# ------------------------------------------------------------------
+# def add(num_1, num_2):
+#     print(num_1 + num_2)
+
+# add(2, 3)
+
+
+
     
 
 
