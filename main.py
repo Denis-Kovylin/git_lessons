@@ -1,14 +1,19 @@
+
 # !!!!!!Homework with Python #2!!!!!!
 # ----------------- Multiplication table for 3 -----------------------------
 # --------------------------------------------------------------------------
 # for i in range(1, 10):
 #     print(f'3 * {i} = {3 * i}')
 # --------------------------------------------------------------------------
-# -----------------  Sums of numbers from 1 to 100 ----------------------------
+# -----------------  AVG of numbers from 1 to 100 ----------------------------
 # sum = 0
 # for i in range(1, 101):
 #     sum += i
-# print('The sum of all numbers in the range 1 to 100 is:', sum)
+#     average = sum/100
+# print('The AVG of all numbers in the range 1 to 100 is:', average)
+
+# sum_avg = sum(list(range(1, 101))) / 100
+# print('The sum of all numbers in the range 1 to 100 is:', sum_avg)
 # ---------------------------------------------------------------------------
 # ----------- Divide by two until the result is less than fifty -----------
 # number = float(input('Enter number: '))
@@ -91,6 +96,30 @@
 #     print('New salary: ', new_salary)
 
 
+
+
+# salary = float(input('Enter your current salary: '))
+# work_experience = float(input('Enter your work experience (years): '))
+# new_salary = 0
+
+# if salary <= 0 or work_experience <= 0:
+#     new_salary = 0
+# elif work_experience < 1:
+#     new_salary = salary * 1
+# elif 1 <= work_experience <= 3:
+#     new_salary = salary * 1.1
+# else:
+#     new_salary = salary * 1.2
+
+# if new_salary <= 0:
+#     print('Invalid data!!!')
+# elif new_salary >= 4000 and work_experience >= 1:
+#     new_salary += 500
+# elif new_salary < 4000 and work_experience >= 1:
+#     new_salary += 1000
+# else:
+#     new_salary
+# print('New salary: ', new_salary)
 
 
 
