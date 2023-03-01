@@ -150,30 +150,85 @@
 # ----- Словари - неупорядоченые колекции объектов с доступом по ключу -----
 # some_dict = {}
 # # print(type(some_dict))
-# some_dict["some_key"] = 123
+# some_dict["some_key"] = 123 
 # some_dict["some_text"] = 'Text'
 # print(some_dict)
 # # ----- Очищение словаря -----
+# some_dict = {}
+# some_dict['some_key'] = 123
+# some_dict['some_text'] = 'Text'
 # some_dict.clear()
 # print(some_dict)
 # # ----- Корирование словаря ----
+# some_dict = {}
+# some_dict['some_key'] = 123
+# some_dict['some_text'] = 'text'
 # dict_1 = some_dict.copy()
 # print(dict_1, some_dict)
 # # ----- Перебор словаря (вариант 1) -----
+# some_dict = {}
+# some_dict['some_key'] = 123
+# some_dict['some_text'] = 'text'
 # print(some_dict)
+
 # for key in some_dict:
 #     print(f'key: {key} value {some_dict[key]}')
 #     # ----- Перебор словаря (вариант 2) -----
+# some_dict ={}
+# some_dict['some_key'] =123
+# some_dict['some_text'] = 'Text'
 # print(some_dict)
+
 # for key, values in some_dict.items():
 #     print(f'Key: {key} value {values}')
-# # ----- Метод values() выводит все значения из словаря -----
+# # ----- Метод values() выводит все значения из словаря в виде масива -----
+# some_dict ={}
+# some_dict['some_key'] =123
+# some_dict['some_text'] = 'Text'
+# print(some_dict)
+
+# print(some_dict.values())
+# ------------ Метод keys() выводит все ключи ----------
+# some_dict ={}
+# some_dict['some_key'] =123
+# some_dict['some_text'] = 'Text'
+# print(some_dict)
+
 # print(some_dict.keys())
+
+# ---------- Метод update() - обновление словоря ----------
+# some_dict ={}
+# some_dict['some_key'] =123
+# some_dict['some_text'] = 'Text'
 
 # some_dict.update({'some+1': '123.21', 'some_key': 123.23})
 # print(some_dict)
+
 # --------------------------------------------------------------
 # ----- Класс - кастомный объект данных и этот объект может иметь некоторые функции внутри класса. Функции внутри класса будут являтся методами класса-----
+
+# class Duck():
+
+#     def __init__(self, color, duck_property):
+#         self.color = color
+#         self.duck_property = duck_property
+
+#     def show_color(self):
+#         print(f'This duck is {self.color}')
+
+#     def show_property(self):
+#         print(f'The property of duck are {self.duck_property}')
+
+
+# black_duck = Duck('Black', ['Fly', 'Swim', 'Quacks'])
+# wight_duck = Duck('Wight', ['Swim', 'Quacks'])
+
+# black_duck.show_color()
+# black_duck.show_property()
+
+# wight_duck.show_color()
+# wight_duck.show_property()
+
 
 # ---------------------------- АВТОМАТИЗАЦИЯ --------------------------------
 # ---------------------------------------------------------------------------
